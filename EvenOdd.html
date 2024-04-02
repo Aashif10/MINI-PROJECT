@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        span{
+            font-size: 20px;
+            color: green;
+            font-weight: bold;
+        }
+        input{
+            border: 3px solid green;
+            font-size: 20px;
+            color: green;
+            background-color: black;
+        }
+   div{
+    border: 2px solid green;
+    width: 200px;
+    height: 40px;
+    color: green;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+
+   }
+   button{
+    background-color: green;
+    font-size: 20px;
+    border: 3px solid black;
+    color: white;
+   }
+   h2{
+    color: green;
+   }
+   ::placeholder{
+    color:green;
+   }
+   
+    </style>
+</head>
+<body>
+    <h2>To Check Even and Odd Number:</h2>
+    <span>Number:</span> <input type="text" id="input" placeholder="Enter  any number">
+    <button onclick="myfun()">Submit</button>
+    <div placeholder="Enter the text" id="result"> </div>
+
+ <script>
+    function myfun(){
+        let number=document.getElementById("input").value;
+        let result=(number%2==0)?"Even":"Odd";
+        document.getElementById("result").innerText=result;
+    }
+ </script>
+</body>
+</html>
