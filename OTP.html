@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 20px;
+        /* padding:10px; */
+        margin-top: 20px;
+        border:3px solid black;
+        text-align: center;
+        letter-spacing: 10px;
+        
+        
+    }
+    button{
+        font-size: 20px;
+        color:white;
+        background-color: black;
+    }
+</style>
+<body>
+
+<h2>OTP GENERATOR</h2>
+<button onclick="otpgenerate(4)">OTP</button>
+  <div id="div"></div>
+    <script>
+       function otpgenerate(digits){
+    let otp='';
+    for(let i=0;i<digits;i++){
+        otp+=Math.floor(Math.random()*10).toString();
+
+    }
+    // return otp;
+    // document.write(otp);
+    document.getElementById("div").innerText=otp;
+}
+    </script>
+</body>
+</html>
