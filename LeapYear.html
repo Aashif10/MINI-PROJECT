@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+        input{
+            border: 2px solid olive;
+            font-size: 20px;
+        }
+        span{
+            font-size: 20px;
+
+        }
+       div{
+        border: 2px solid black;
+        margin-top: 30px;
+        width: 180px;
+        font-size: 30px;
+        padding: 30px;
+        color: green
+       }
+    </style>
+</head>
+
+<body>
+    <h2>To check leap year or not</h2>
+    <span>Number:</span> <input type="text" id="check" autocomplete="off" >
+    <button onclick="Leap()">Check</button>
+    <div id="value"></div>
+    <script>
+        function Leap() {
+
+            let number = document.getElementById('check').value;
+            
+            // let result=(number%2==0)?'Even':'Odd';
+            let result = (number % 4 == 0 && number % 100 !== 0) || (number % 400 == 0) ? 'leap year' : 'Not Leap year';
+            // document.write(result);
+            document.getElementById('value').innerHTML=result;
+
+
+
+        }
+    </script>
+   
+</body>
+
+</html>
