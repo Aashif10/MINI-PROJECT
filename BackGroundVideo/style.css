@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: green; */
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    /* opacity:0.8; */
+    
+
+}
+
+#container {
+    width: 100%;
+
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    list-style: none;
+    font-size: 20px;
+}
+
+#list li {
+    margin: 20px;
+    color: white;
+    font-size: 25px;
+
+}
+
+nav img {
+    width: 100px;
+    padding: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#burger {
+
+    margin-left: 550px;
+    margin-top: 230px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+
+
+}
+#burger:hover{
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+#burger1 {
+    margin-left: 670px;
+    margin-top: 20px;
+    /* padding: 10px; */
+    width: 100px;
+    height: 37px;
+    font-size: 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    font-weight: bold;
+}
+
+#burger1:hover {
+    background-color: gray;
+    color: whitesmoke;
+    border: 2px solid gray;
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;
+}
+
+#list li:hover {
+    color:black;
+    transition: all 1s ease-in-out;
+    /* text-decoration: underline; */
+   
+
+}
